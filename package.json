@@ -1,0 +1,27 @@
+{
+  "name": "ex2_node",
+  "version": "1.0.0",
+  "description": "Esse é apenas um exemplo do que virá a ser o bilola app",
+  "main": "app.js",
+  "dependencies": {
+    "ejs": "^2.5.8",
+    "express": "^4.16.3"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/erickcarvalho/ex2_node.git"
+  },
+  "keywords": [
+    "bilola"
+  ],
+  "author": "Erick da Bilola",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/erickcarvalho/ex2_node/issues"
+  },
+  "homepage": "https://github.com/erickcarvalho/ex2_node#readme"
+}

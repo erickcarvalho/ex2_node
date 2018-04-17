@@ -1,12 +1,17 @@
 var http = require('http');
+var express = require('express');
+var app = express();
 
-var server = http.createServer(function(request, response){
-    if(request.url === "/editar"){
-        response.end('<html><body><h1>Bem vindo ao Bilola - Edite sua pagina</h1></body></html>');
-    }
-    else{
-        response.end('<html><body><h1>Bem vindo ao Bilola Master</h1></body></html>');
-    }
+app.set('view engine', 'ejs')
+
+app.get('/', function(req,res){
+    res.render('index');
 });
-server.listen(3000);
-console.log('Bilola em pé!');
+
+app.get('/editar', function(req, res){
+    res.render('editar')
+});
+
+app.listen(3000, function(){
+    console.log("Bilola está em pé e agora com nodemon!");
+});
